@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item android:id="@+id/draw_button"
+        android:icon="@drawable/brush"
+        android:title="@string/brush"
+        app:showAsAction="always" />
+    <item android:id="@+id/erase_button"
+        android:icon="@drawable/eraser"
+        android:title="@string/erase"
+        app:showAsAction="always" />
+
+</menu>

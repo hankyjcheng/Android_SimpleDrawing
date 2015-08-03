@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121">
+
+    <TextView
+        android:id="@+id/backgroundText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/background"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/transparent_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/backgroundText">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transparent"
+            android:textColor="#FFFFFF" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/load_background_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/transparent_prompt">
+
+        <Button
+            android:id="@+id/white_background"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="White Background"
+            android:background="#FAFAFA" />
+
+        <Button
+            android:id="@+id/choose_device"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Choose from device"
+            android:layout_marginTop="16dp"
+            android:background="#FAFAFA" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/load_background_prompt"
+        android:layout_margin="16dp">
+
+        <com.hankcheng.simpledrawing.utils.BackgroundView
+            android:id="@+id/backgroundPreview"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/cancel_file"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:background="#FAFAFA" />
+
+        <Button
+            android:id="@+id/create_file"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:text="Create"
+            android:background="#FAFAFA" />
+
+    </LinearLayout>
+
+</RelativeLayout>
